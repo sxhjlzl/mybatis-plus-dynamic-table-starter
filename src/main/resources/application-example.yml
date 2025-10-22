@@ -1,0 +1,103 @@
+# MyBatis-Plus 动态表名配置示例
+# 此文件仅作为配置参考，实际使用时请将配置复制到您的 application.yml 或 application.properties 文件中
+
+# 动态表名配置
+dynamic-table:
+  # 是否启用动态表名功能，默认为 true
+  enabled: true
+  
+  # 是否启用SQL日志打印，默认为 false
+  enable-sql-log: true
+  
+  # 日期分表配置
+  date-sharding:
+    # 按年分表示例
+    - tables: 
+        - user_log
+        - order_log
+      date-pattern: "yyyy"
+      priority: 1
+    
+    # 按月分表示例  
+    - tables:
+        - sales_record
+        - payment_record
+      date-pattern: "yyyyMM"
+      priority: 2
+      
+    # 按日分表示例
+    - tables:
+        - access_log
+        - error_log
+      date-pattern: "yyyyMMdd"
+      priority: 3
+  
+  # 哈希分表配置
+  hash-sharding:
+    # 用户表按用户ID哈希分表
+    - tables:
+        - user_info
+        - user_profile
+      table-count: 16
+      priority: 10
+      
+    # 订单表按订单ID哈希分表
+    - tables:
+        - order_info
+        - order_detail
+      table-count: 32
+      priority: 11
+  
+  # 新格式表配置（扩展配置）
+  tables:
+    # 自定义分表策略示例
+    - table-name: "custom_table"
+      strategy: "custom"
+      format: "yyyyMM"
+      mod-value: 8
+      priority: 20
+
+# MyBatis-Plus 配置
+mybatis-plus:
+  configuration:
+    # 开启驼峰命名转换
+    map-underscore-to-camel-case: true
+    # 开启SQL日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  
+  # 全局配置
+  global-config:
+    db-config:
+      # 逻辑删除字段
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# 数据源配置示例
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: password
+    
+  # 连接池配置
+  hikari:
+    minimum-idle: 5
+    maximum-pool-size: 20
+    auto-commit: true
+    idle-timeout: 30000
+    pool-name: DatebookHikariCP
+    max-lifetime: 1800000
+    connection-timeout: 30000
+    connection-test-query: SELECT 1
+
+# 日志配置
+logging:
+  level:
+    # 动态表名相关日志级别
+    com.lizhuolun.mybatis.dynamic: DEBUG
+    # MyBatis SQL日志
+    com.baomidou.mybatisplus: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"

@@ -1,0 +1,31 @@
+MyBatis-Plus Dynamic Table Starter
+Copyright 2025 李卓伦
+
+This product includes software developed by the following projects:
+
+MyBatis-Plus
+Copyright 2011-2025 Baomidou (https://github.com/baomidou/mybatis-plus)
+Licensed under the Apache License, Version 2.0
+
+Spring Boot
+Copyright 2012-2025 Pivotal Software, Inc.
+Licensed under the Apache License, Version 2.0
+
+Spring Framework
+Copyright 2002-2025 Pivotal Software, Inc.
+Licensed under the Apache License, Version 2.0
+
+Apache Commons
+Copyright 2001-2025 The Apache Software Foundation
+Licensed under the Apache License, Version 2.0
+
+SLF4J
+Copyright 2004-2025 QOS.ch
+Licensed under the MIT License
+
+Lombok
+Copyright 2009-2025 The Project Lombok Authors
+Licensed under the MIT License
+
+This product may include other third-party libraries and dependencies.
+Please refer to the individual library licenses for more information.

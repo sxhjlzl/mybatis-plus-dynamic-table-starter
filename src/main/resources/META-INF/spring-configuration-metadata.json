@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "dynamic-table",
+      "type": "com.lizhuolun.mybatis.dynamic.config.DynamicTableProperties",
+      "sourceType": "com.lizhuolun.mybatis.dynamic.config.DynamicTableProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "dynamic-table.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用动态表名功能",
+      "defaultValue": true
+    },
+    {
+      "name": "dynamic-table.enable-sql-log",
+      "type": "java.lang.Boolean",
+      "description": "是否启用SQL日志打印",
+      "defaultValue": false
+    },
+    {
+      "name": "dynamic-table.date-sharding",
+      "type": "java.util.List<com.lizhuolun.mybatis.dynamic.config.DynamicTableProperties$DateShardingConfig>",
+      "description": "日期分表配置列表"
+    },
+    {
+      "name": "dynamic-table.hash-sharding",
+      "type": "java.util.List<com.lizhuolun.mybatis.dynamic.config.DynamicTableProperties$HashShardingConfig>",
+      "description": "哈希分表配置列表"
+    },
+    {
+      "name": "dynamic-table.tables",
+      "type": "java.util.List<com.lizhuolun.mybatis.dynamic.config.DynamicTableProperties$TableConfig>",
+      "description": "表配置列表（新格式支持）"
+    }
+  ]
+}
