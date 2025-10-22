@@ -8,7 +8,7 @@
 
 如果您发现了bug或有功能建议，请通过以下方式报告：
 
-1. **搜索现有问题** - 在 [Issues](https://github.com/lizhuolun/mybatis-plus-dynamic-table/issues) 中搜索是否已有类似问题
+1. **搜索现有问题** - 在 [Issues](https://github.com/sxhjlzl/mybatis-plus-dynamic-table-starter/issues) 中搜索是否已有类似问题
 2. **创建新问题** - 如果没有找到相关问题，请创建新的Issue
 3. **提供详细信息** - 包括问题描述、复现步骤、环境信息等
 
@@ -104,8 +104,8 @@ mybatis-plus-dynamic-table-starter/
 
 1. **克隆项目**
    ```bash
-   git clone https://github.com/lizhuolun/mybatis-plus-dynamic-table.git
-   cd mybatis-plus-dynamic-table/mybatis-plus-dynamic-table-starter
+   git clone https://github.com/sxhjlzl/mybatis-plus-dynamic-table-starter.git
+   cd mybatis-plus-dynamic-table-starter
    ```
 
 2. **安装依赖**
@@ -192,9 +192,9 @@ mybatis-plus-dynamic-table-starter/
 
 ## 📞 联系方式
 
-- **GitHub Issues**: [项目Issues](https://github.com/lizhuolun/mybatis-plus-dynamic-table/issues)
-- **邮箱**: your-email@example.com
-- **讨论区**: [GitHub Discussions](https://github.com/lizhuolun/mybatis-plus-dynamic-table/discussions)
+- **GitHub Issues**: [项目Issues](https://github.com/sxhjlzl/mybatis-plus-dynamic-table-starter/issues)
+- **邮箱**: maybe.zhuo@qq.com
+- **讨论区**: [GitHub Discussions](https://github.com/sxhjlzl/mybatis-plus-dynamic-table-starter/discussions)
 
 ## 🙏 致谢
 

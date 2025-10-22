@@ -381,9 +381,9 @@ logging:
 
 ## 📞 联系方式
 
-- 项目地址：[https://github.com/lizhuolun/mybatis-plus-dynamic-table](https://github.com/lizhuolun/mybatis-plus-dynamic-table)
-- 问题反馈：[Issues](https://github.com/lizhuolun/mybatis-plus-dynamic-table/issues)
-- 邮箱：your-email@example.com
+- 项目地址：[https://github.com/sxhjlzl/mybatis-plus-dynamic-table-starter](https://github.com/sxhjlzl/mybatis-plus-dynamic-table-starter)
+- 问题反馈：[Issues](https://github.com/sxhjlzl/mybatis-plus-dynamic-table-starter/issues)
+- 邮箱：maybe.zhuo@qq.com
 
 ---
 
